@@ -3962,26 +3962,20 @@ Times = main:Label("Server Time")
    end
 if world1 then
     main:Button("Bypass tp",function()
-        local CFrameEnd = CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785)
-        local Time = 30
-        local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
-		loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
-	end)
+        loadstring(game:HttpGet("https://pastebin.com/raw/xZzT8xhc"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
+    end)
 end
 elseif world2 then
 	main:Button("Bypass tp",function()
-		local CFrameEnd = CFrame.new()
-		local Time = 30
-		local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
-		loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/xZzT8xhc"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
 	end)
 end
 elseif world3 then
 	main:Button("Bypass tp",function()
-		local CFrameEnd = CFrame.new()
-		local Time = 30
-		local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
-		loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/xZzT8xhc"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
 	end)
 end
 main:Button("fix HP",function()
