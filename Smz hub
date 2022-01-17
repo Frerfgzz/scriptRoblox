@@ -3960,52 +3960,28 @@ Times = main:Label("Server Time")
 	  local Second = math.floor(GameTime/(60^0))%60
 	  Times:Refresh("Hour : "..Hour.." Minute : "..Minute.." Second : "..Second)
    end
-main:Button("Bypass", function(xmax)
-    Bypass = xmax
+main:Button("God Mode", function(value)
+	loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
 end)
-
-spawn(function()
-    pcall(function()
-        while wait(.1) do
-            if Bypass then
-                if world1 then
-                    totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
-                if world2 then
-                    totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
-                if world3 then
-                    totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
-                end
-            end
-        end
-    end)
+main:Button("Bypass tp",function()
+	if world1 then
+		totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
+	if world2 then
+		totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
+	if world3 then
+		totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
+    end
 end)
-
-spawn(function()
-    pcall(function()
-        while wait(.2) do
-			if Bypass then
-				loadstring(game:HttpGet("https://pastebin.com/raw/bv3tQtVH"))()
-			end
-		end
-	end)
+main:Button("fix HP",function()
+	while wait() do
+	game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+	end
 end)
-
-spawn(function()
-	pcall(function()
-		if Bypass then
-			while wait() do
-				game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
-			end
-		end
-	end)
-end)
-
 spawn(function()
 	while wait() do
 		 UpdateTime()
 	  end
 end)
-
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
     _G.FarmLevel = x
