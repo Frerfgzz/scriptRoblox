@@ -262,6 +262,7 @@ function RadientPaid:Window(text,maincolor)
 	UserName.Position = UDim2.new(0.230000004, 0, 0.115999997, 0)
 	UserName.Size = UDim2.new(0, 98, 0, 17)
 	UserName.Font = Enum.Font.GothamSemibold
+	UserName.TextColor3 = Color3.fromRGB(79, 199, 176)
 	UserName.TextSize = 13.000
 	UserName.TextTransparency = 1
 	UserName.TextXAlignment = Enum.TextXAlignment.Left
@@ -662,7 +663,7 @@ function RadientPaid:Window(text,maincolor)
 
 	UserPanelUserCircle.Name = "UserPanelUserCircle"
 	UserPanelUserCircle.Parent = UserPanelUserImage
-	UserPanelUserCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UserPanelUserCircle.BackgroundColor3 = Color3.fromRGB55, 255, 255)
 	UserPanelUserCircle.BackgroundTransparency = 1.000
 	UserPanelUserCircle.Size = UDim2.new(0, 71, 0, 71)
 	UserPanelUserCircle.Image = "rbxassetid://4031889928"
@@ -3964,6 +3965,29 @@ spawn(function()
 	while wait() do
 		 UpdateTime()
 	  end
+end)
+main:Button("Bypass TP",function(bp)
+	_G.BypassTP = bp
+end)
+spawn(function()
+	while wait() do
+		if _G.BypassTP then
+			if world1 then
+			    totarget(CFrame.new())
+		    elseif world2 then
+				totarget(CFrame.new())
+			elseif world3 then
+				totarget(CFrame.new())
+			end
+		end
+	end
+end)
+spawn(function()
+	while wait() do
+		if _G.BypassTP then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
+		end
+	end
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
