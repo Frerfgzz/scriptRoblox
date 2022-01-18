@@ -3966,15 +3966,12 @@ spawn(function()
 		 UpdateTime()
 	end
 end)
-main:Button("Bypass TP",function(bp)
-	_G.BypassTP = bp
-end)
-spawn(function()
-	while wait() do
-		if _G.BypassTP then
+main:Button("Bypass TP",function()
+	spawn(function()
+		while wait() do
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
 		end
-	end
+	end)
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
