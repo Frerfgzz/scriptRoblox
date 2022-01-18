@@ -262,7 +262,6 @@ function RadientPaid:Window(text,maincolor)
 	UserName.Position = UDim2.new(0.230000004, 0, 0.115999997, 0)
 	UserName.Size = UDim2.new(0, 98, 0, 17)
 	UserName.Font = Enum.Font.GothamSemibold
-	UserName.TextColor3 = Color3.fromRGB(79, 199, 176)
 	UserName.TextSize = 13.000
 	UserName.TextTransparency = 1
 	UserName.TextXAlignment = Enum.TextXAlignment.Left
@@ -276,12 +275,12 @@ function RadientPaid:Window(text,maincolor)
 	UserTag.Position = UDim2.new(0.230000004, 0, 0.275000013, 0)
 	UserTag.Size = UDim2.new(0, 95, 0, 17)
 	UserTag.Font = Enum.Font.GothamBold
-	UserTag.TextColor3 = Color3.fromRGB(79, 199, 176)
+	UserTag.TextColor3 = Color3.fromRGB(86, 217, 252)
 	UserTag.TextSize = 13.000
 	UserTag.TextTransparency = 0
 	UserTag.TextXAlignment = Enum.TextXAlignment.Left
 
-	UserName.Text = "Smz ● Hub"
+	UserName.Text = "Smz● Hub"
 	UserTag.Text = "Smz ● Hub"
 
 	ServersHoldFrame.Name = "ServersHoldFrame"
@@ -663,7 +662,7 @@ function RadientPaid:Window(text,maincolor)
 
 	UserPanelUserCircle.Name = "UserPanelUserCircle"
 	UserPanelUserCircle.Parent = UserPanelUserImage
-	UserPanelUserCircle.BackgroundColor3 = Color3.fromRGB55, 255, 255)
+	UserPanelUserCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserPanelUserCircle.BackgroundTransparency = 1.000
 	UserPanelUserCircle.Size = UDim2.new(0, 71, 0, 71)
 	UserPanelUserCircle.Image = "rbxassetid://4031889928"
@@ -1704,7 +1703,7 @@ function RadientPaid:Window(text,maincolor)
 		Server.Text = ""
 		Server.BackgroundTransparency = 1
 		Server.TextTransparency = 1
-		Server.TextColor3 = Color3.fromRGB(79, 199, 176)
+		Server.TextColor3 = Color3.fromRGB(86, 217, 252)
 		Server.TextSize = 18.000
 
 		ServerBtnCorner.CornerRadius = UDim.new(1, 0)
@@ -1785,7 +1784,7 @@ function RadientPaid:Window(text,maincolor)
 		ServerTitle.Size = UDim2.new(0, 97, 0, 39)
 		ServerTitle.Font = Enum.Font.GothamSemibold
 		ServerTitle.Text = text
-		ServerTitle.TextColor3 = Color3.fromRGB(79, 199, 176)
+		ServerTitle.TextColor3 = Color3.fromRGB(86, 217, 252)
 		ServerTitle.TextSize = 15.000
 		ServerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2105,7 +2104,7 @@ function RadientPaid:Window(text,maincolor)
 			ChannelHolder.ScrollBarThickness = 6
 			ChannelHolder.CanvasSize = UDim2.new(0,0,0,0)
 			ChannelHolder.ScrollBarImageTransparency = 0
-			ChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(79, 199, 176)
+			ChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(86, 217, 252)
 			ChannelHolder.Visible = false
 			ChannelHolder.ClipsDescendants = false
 
@@ -2270,7 +2269,7 @@ function RadientPaid:Window(text,maincolor)
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
 						TweenService:Create(Icon,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
-						TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(79, 199, 176)}):Play()
+						TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(86, 217, 252)}):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(Icon,TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency = 1}):Play()
 						Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
@@ -2291,7 +2290,7 @@ function RadientPaid:Window(text,maincolor)
 				if default == true then
 					toggled = false
 					TweenService:Create(Icon,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
-					TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(79, 199, 176)}):Play()
+					TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(86, 217, 252)}):Play()
 					ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 					TweenService:Create(Icon,TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency = 1}):Play()
 					Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
@@ -2359,7 +2358,7 @@ function RadientPaid:Window(text,maincolor)
 
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(79, 199, 176)
+				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(86, 217, 252)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
@@ -3262,8 +3261,8 @@ function RadientPaid:Window(text,maincolor)
 	end
 	return ServerHold
 end
-local RadientPaid = RadientPaid:Window("Blox Fruit (UPDATE 17)")
-local server = RadientPaid:Server("Smz Hub", "", "")
+local RadientPaid = RadientPaid:Window("Blox Fruit (17)")
+local server = RadientPaid:Server("Smz HUB", "", "")
 local main = server:Channel("Main")
 local placeId = game.PlaceId
 if placeId == 2753915549 then
@@ -3964,10 +3963,14 @@ Times = main:Label("Server Time")
 spawn(function()
 	while wait() do
 		 UpdateTime()
-	end
+	  end
 end)
-main:Button("Bypass TP",function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
+main:Button("Bypass",function()
+	spawn(function()
+		while wait() do
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
+		end
+	end)
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
