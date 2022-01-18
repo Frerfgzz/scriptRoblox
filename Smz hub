@@ -3967,17 +3967,19 @@ spawn(function()
 	  end
 end)
 main:Button("Bypass TP",function(bp)
-	_G.Bypass TP = bp
+	_G.BypassTP = bp
 end)
 spawn(function()
 	while wait() do
-		if _G.Bypass TP then
+		if _G.BypassTP then
 			if world1 then
 			    totarget(CFrame.new())
 		    elseif world2 then
 				totarget(CFrame.new())
 			elseif world3 then
 				totarget(CFrame.new())
+			end
+			end
 			end
 		end
 	end
