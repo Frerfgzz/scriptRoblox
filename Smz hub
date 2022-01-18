@@ -3966,6 +3966,9 @@ spawn(function()
 	  end
 end)
 main:Button("Bypass",function()
+	while wait() do
+	game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+	end
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
 	if world1 then
 		totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
@@ -3992,6 +3995,7 @@ spawn(function()
 					cq()
 					if (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 20 then
 						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						wait(2)
 						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
 					else
 						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrameQuest
@@ -4078,11 +4082,8 @@ main:Button("Redeem Code",function()
    UseCode("STRAWHATMAINE")
    UseCode("3Bvisits")
 end)
-main:Button("No clip",function()
+main:Toggle("No clip",function()
     workspace.Gravity = 0
-end)
-main:Button("Join Discord Secret Hub", function(value)
-    local a=request or http_request or syn and syn.request;local b=game.HttpService;a({Url="http://127.0.0.1:6463/rpc?v=1",Method="POST",Headers={["Content-Type"]="application/json",["Origin"]="https://discord.com"},Body=b:JSONEncode({cmd="INVITE_BROWSER",args={code="S95fXhuk2S"},nonce=b:GenerateGUID(false)})})local c=game:GetService("Players").LocalPlayer
 end)
 if world1 then
 
