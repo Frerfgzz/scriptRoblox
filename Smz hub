@@ -3970,13 +3970,6 @@ main:Button("Bypass",function(ggez)
 end)
 spawn(function()
 	while wait() do
-		if _G.Bypass then
-		    loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
-		end
-	end
-end)
-spawn(function()
-	while wait() do
 		pcall(function()
 		    if _G.Bypass then
 			    if world1 then
