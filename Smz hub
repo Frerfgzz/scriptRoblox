@@ -3973,13 +3973,12 @@ spawn(function()
 	while wait() do
 		if _G.BypassTP then
 			if world1 then
-			    totarget(CFrame.new())
-		    elseif world2 then
-				totarget(CFrame.new())
-			elseif world3 then
-				totarget(CFrame.new())
-			end
-			end
+			        totarget(CFrame.new())
+		        elseif world2 then
+				    totarget(CFrame.new())
+			    elseif world3 then
+				    totarget(CFrame.new())
+				end
 			end
 		end
 	end
