@@ -3967,16 +3967,16 @@ spawn(function()
 end)
 main:Button("Bypass",function(ggez)
 	_G.Bypass = ggez
-	spawn(function()
-		while wait() do
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
-		end
-	end)
+end)
+spawn(function()
+	while wait() do
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
+	end
 end)
 spawn(function()
 	while wait() do
 		if _G.Bypass then
-		   totarget(CFrame.new(-2840.1, 25.8438, -9814.38))
+		    TP2FF(CFrame.new(-3293.04834, 4.98437738, -9640.93457))
 		end
 	end
 end)
