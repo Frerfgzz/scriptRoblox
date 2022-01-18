@@ -1,5 +1,7 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Patskorn/GUI/main/Copy-SynapOver.lua"))()
 
+
+
 local placeId = game.PlaceId
 if placeId == 2753915549 then
 	world1 = true
@@ -653,9 +655,10 @@ else
     magbring = 400
 end
 
-local GUI = library:new("Smz Hub","[ RightControl ]")
+local GUI = library:new("Smz Hub","[Beta Teat]")
 local Tab1 = GUI:Tap("Main")
-local Tab2 = GUI:Tap("Stats")
+local Tab2 = GUI:Tap("Main2")
+local Tab3 = GUI:Tap("Stats")
 
 Tab1:Button("Bypass tp",function(bp)
     _G.Bypass = bp
@@ -673,11 +676,13 @@ spawn(function()
     pcall(function()
         while wait() do
             if _G.Bypass then
-                totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727))
-            elseif world2 then
-                totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727))
-            elseif world3 then
-                totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727))
+			    if world1 then
+                    totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727))
+                elseif world2 then
+                    totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727))
+                elseif world3 then
+                    totarget(CFrame.new(5310.8095703125, 21.594484329224, 129.39053344727))
+				end
             end
         end
     end)
@@ -744,7 +749,7 @@ spawn(function()
 			end
 		end
 	end
-end)
+end
 spawn(function()
 	while wait() do
 		if _G.FarmLevel then
@@ -863,4 +868,18 @@ spawn(function()
         end
     end)
 end)
+
+Tab2:Toggle("Auto Fully SuperHuman",function(afh)
+	_G.AutoSuperHuman = afh
 end)
+sapwn(function()
+	while wait() do
+		pcall(function()
+			if _G.AutoSuperHuman then
+				-- commands
+			end
+		end)
+	end
+end)
+Tab2:Line()
+Tab2:Button("Redeem Code", function()
