@@ -3976,7 +3976,7 @@ end)
 spawn(function()
 	while wait() do
 		if _G.Bypass then
-		   totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
+		   totarget(CFrame.new(-2840.1, 25.8438, -9814.38))
 		end
 	end
 end)
