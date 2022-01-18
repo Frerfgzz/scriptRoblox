@@ -29,6 +29,26 @@ end
 FM = false
 sky = false
 
+Tab1:Button("Bypass tp",function(bp)
+    _G.Bypass = bp
+end)
+
+Tab1:Label("Farm")
+
+Tab1:Toggle("Auto Farm,false,function(af)
+    _G.FarmLevel  = af
+end)
+
+Tab1:Line()
+
+Tab1:Dropdown("SelectToolWeapon",function(dd)
+    _G.SelectWeapon = dd
+end)
+
+Tab1:TextBox("RefreshTool",function(rt)
+    _G.ToolR = rt
+end)
+
 function cq()
     if world1 then
         local MyLevel = game.Players.LocalPlayer.Data.Level.Value
@@ -536,6 +556,7 @@ function cq()
         end
     end
 end
+
 function TP2FF(P1)
 	Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
 	if Distance < 1000 then
@@ -552,6 +573,7 @@ function TP2FF(P1)
     wait(Distance/Speed)
     Clip = false
 end
+
 function TP(P1,P2)
     Distance = (P1 - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
     if Distance < 1000 then
@@ -587,6 +609,7 @@ function TPs(P1,P2)
     tweenss:Play()
     wait(Distance/Speed)
 end
+
 function totarget(CFgo)
     local tween_s = game:service"TweenService"
     local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - CFgo.Position).Magnitude/300, Enum.EasingStyle.Linear)
@@ -596,6 +619,7 @@ function totarget(CFgo)
     end)
     if not tween then return err end
 end
+
 function bithop()
     local PlaceID = game.PlaceId
     local AllIDs = {}
@@ -647,6 +671,7 @@ function bithop()
             end
         end
     end
+
     function Teleport() 
         while wait() do
             pcall(function()
@@ -669,9 +694,7 @@ else
 	Rq = 3000
     magbring = 400
 end
-Tab1:Button("Bypass tp",function(bp)
-    _G.Bypass = bp
-end)
+
 spawn(function()
     pcall(function()
         while wait() do
@@ -681,6 +704,7 @@ spawn(function()
         end
     end)
 end)
+
 spawn(function()
     pcall(function()
         while wait() do
@@ -697,11 +721,6 @@ spawn(function()
     end)
 end)
 
-Tab1:Label("Farm")
-
-Tab1:Toggle("Auto Farm,false,function(af)
-    _G.Farm = af
-end)
 spawn(function()
 	while wait() do
 		if _G.FarmLevel then
@@ -759,6 +778,7 @@ spawn(function()
 		end
 	end
 end
+
 spawn(function()
 	while wait() do
 		if _G.FarmLevel then
@@ -815,7 +835,8 @@ spawn(function()
 			end
 		end
 	end
-end)
+end
+
 spawn(function()
     while wait() do
     if _G.FarmLevel then
@@ -823,6 +844,7 @@ spawn(function()
         end
     end
 end)
+
 spawn(function()
     while wait() do
     if _G.FarmLevel then
@@ -836,15 +858,11 @@ spawn(function()
         end
     end
 end)
-Tab1:Line()
 
-Tab1:Dropdown("SelectToolWeapon",function(dd)
-    _G.Weapon = dd
-end)
 spawn(function()
     while wait() do
         pcall(function()
-            if _G.Weapon then
+            if _G.SelectWeapon then
             if game.Players.LocalPlayer.Backpack:FindFirstChild("Key") then
                 local tool = game.Players.LocalPlayer.Backpack:FindFirstChild("Key")
                 wait(.4)
@@ -854,9 +872,7 @@ spawn(function()
         end)
     end
 end)
-Tab1:TextBox("RefreshTool",function(rt)
-    _G.ToolR = rt
-end)
+
 spawn(function()
     pcall(function()
         while wait() do
