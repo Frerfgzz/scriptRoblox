@@ -3971,6 +3971,11 @@ main:Button("Bypass",function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
 		end
 	end)
+	spawn(function()
+		while wait() do
+			totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
+		end
+	end)
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
