@@ -3964,7 +3964,7 @@ Times = main:Label("Server Time")
 spawn(function()
 	while wait() do
 		 UpdateTime()
-	  end
+	end
 end)
 main:Button("Bypass TP",function(bp)
 	_G.BypassTP = bp
