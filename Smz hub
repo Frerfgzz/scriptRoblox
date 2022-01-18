@@ -3972,15 +3972,7 @@ end)
 spawn(function()
 	while wait() do
 		if _G.BypassTP then
-			if world1 then
-			    totarget(CFrame.new())
-			end
-		    elseif world2 then
-				    totarget(CFrame.new())
-			end
-			elseif world3 then
-				    totarget(CFrame.new())
-			end
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
 		end
 	end
 end)
