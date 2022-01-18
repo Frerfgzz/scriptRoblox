@@ -3975,12 +3975,11 @@ spawn(function()
 			if world1 then
 			    totarget(CFrame.new())
 			end
-		        elseif world2 then
+		    elseif world2 then
 				    totarget(CFrame.new())
-				end
-			    elseif world3 then
+			end
+			elseif world3 then
 				    totarget(CFrame.new())
-				end
 			end
 		end
 	end
