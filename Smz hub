@@ -655,6 +655,8 @@ else
     magbring = 400
 end
 
+
+
 local GUI = library:new("Smz Hub","[Beta Teat]")
 local Tab1 = GUI:Tap("Main")
 local Tab2 = GUI:Tap("Main2")
@@ -868,18 +870,4 @@ spawn(function()
         end
     end)
 end)
-
-Tab2:Toggle("Auto Fully SuperHuman",function(afh)
-	_G.AutoSuperHuman = afh
 end)
-sapwn(function()
-	while wait() do
-		pcall(function()
-			if _G.AutoSuperHuman then
-				-- commands
-			end
-		end)
-	end
-end)
-Tab2:Line()
-Tab2:Button("Redeem Code", function()
