@@ -3965,17 +3965,20 @@ spawn(function()
 		 UpdateTime()
 	  end
 end)
-main:Button("Bypass",function()
+main:Button("Bypass",function(ggez)
+	_G.Bypass = ggez
 	spawn(function()
 		while wait() do
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
 		end
 	end)
-	spawn(function()
-		while wait() do
-			totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
+end)
+spawn(function()
+	while wait() do
+		if _G.Bypass then
+		   totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
 		end
-	end)
+	end
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
