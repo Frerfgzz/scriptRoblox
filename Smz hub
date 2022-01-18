@@ -3966,9 +3966,6 @@ spawn(function()
 	  end
 end)
 main:Button("Bypass",function()
-	while wait() do
-	game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
-	end
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
 	if world1 then
 		totarget(CFrame.new(5416.5249, 58.7520332, 4782.78857, 0.863438785, 8.95422971e-08, 0.504453599, -7.09317831e-08, 1, -5.60944322e-08, -0.504453599, 1.26523139e-08, 0.863438785))
@@ -3979,6 +3976,9 @@ main:Button("Bypass",function()
 	if world3 then
 		totarget(CFrame.new(-9449.35156, 4.97824192, 6051.97363, -0.898790359, 0, 0.438378751, 0, 1, 0, -0.438378751, 0, -0.898790359))
     end
+	while wait() do
+		game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+	end
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
@@ -6461,8 +6461,8 @@ main:Label("Auto Farm Boss")
 			AutoFramBoss()
 		end
 	end)
-local Setting = server:Channel("AutoFarm Setting")
-Setting:Toggle("Magnet", true, function(vu)
+local Setting = server:Channel("Setting")
+Setting:Toggle("Magnet", false, function(vu)
     Magnet = vu
 end)
 Setting:Toggle("Auto Haki",true,function(value)
@@ -6478,7 +6478,7 @@ if game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
         end
     end
 end)
-Setting:Toggle("Mob Invisble",false,function(value)
+Setting:Button("Mob Invisble",false,function(value)
 _G.inv = value
      while wait() do
          if _G.inv then
