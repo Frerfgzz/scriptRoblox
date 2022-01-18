@@ -3982,13 +3982,6 @@ spawn(function()
 		end
 	end
 end)
-spawn(function()
-	while wait() do
-		if _G.BypassTP then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/scriptRoblox/main/god%20mode", true))()
-		end
-	end
-end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
     _G.FarmLevel = x
