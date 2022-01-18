@@ -3977,18 +3977,20 @@ spawn(function()
 end)
 spawn(function()
 	while wait() do
-		if _G.Bypass then
-			if world1 then
-		        TP2FF(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
-			end
-			if world2 then
-				TP2FF(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
-			end
-			if world3 then
-				TP2FF(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
-			end
-		end
-	end
+		pcall(function()
+		    if _G.Bypass then
+			    if world1 then
+		            totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
+			    end
+			    if world2 then
+				    totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
+			    end
+			    if world3 then
+				    totarget(CFrame.new(-3293.04834, 4.98437738, -9640.93457, -0.74314785, 0, -0.669127226, 0, 1, 0, 0.669127226, 0, -0.74314785))
+			    end
+		    end
+	    end)
+    end
 end)
 _G.FarmLevel = false
 main:Toggle("AutoFarm",false,function(x)
